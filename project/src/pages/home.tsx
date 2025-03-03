@@ -1,6 +1,6 @@
 import Hero from '@/components/sections/hero';
 import FeaturedEvents from '@/components/sections/featured-events';
-import UpcomingEvents from '@/components/sections/upcoming-events';
+import JoinUsSection from '@/components/sections/join-us';
 import TeamSection from '@/components/sections/team';
 import ContactSection from '@/components/sections/contact';
 import ImageGallery from '@/components/sections/image-gallery';
@@ -11,7 +11,7 @@ export default function HomePage() {
       <Hero />
       <FeaturedEvents />
       <ImageGallery />
-      <UpcomingEvents />
+      <JoinUsSection />
       <TeamSection />
       <ContactSection />
     </div>

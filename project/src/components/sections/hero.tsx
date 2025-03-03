@@ -19,12 +19,15 @@ export default function Hero() {
           Join our vibrant community and discover amazing events that bring people together.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
+        <Button 
+          size="lg" 
+          variant="outline" 
+          className="gap-2 bg-white dark:bg-gray-800 text-black dark:text-white border-[#0326f3] dark:border-white hover:bg-[#0326f3] hover:text-white dark:hover:bg-white dark:hover:text-black transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95"
+        >
+          Join Us
+        </Button>
           <Button size="lg" style={{backgroundColor: '#0326f3'}} className="hover:bg-blue-700">
             Explore Events
-          </Button>
-          <Button size="lg" variant="outline" className="gap-2">
-            <Calendar className="h-5 w-5" />
-            View Calendar
           </Button>
         </div>
       </div>

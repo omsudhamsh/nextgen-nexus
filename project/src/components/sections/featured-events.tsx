@@ -6,34 +6,39 @@ import { Calendar, Clock, MapPin } from 'lucide-react';
 const featuredEvents = [
   {
     id: 1,
-    title: 'Community Tech Conference',
-    description: 'Join us for a day of inspiring talks, workshops, and networking opportunities with tech leaders.',
-    date: 'June 15, 2025',
-    time: '9:00 AM - 5:00 PM',
-    location: 'Tech Hub, Downtown',
+    title: 'Open Source Day',
+    description: 'Join us for a day of learning and contributing to open source projects.',
+    date: 'March 1, 2025',
+    time: '10:30 AM - 2:00 PM',
+    location: 'Microsoft Office, Gachibowli',
     category: 'Conference',
+    status: 'Closed',
     image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    link: 'https://reskilll.com/event/opensourcehyd'
   },
   {
     id: 2,
-    title: 'Art & Culture Festival',
+    title: 'Open Source Day',
     description: 'Experience a vibrant celebration of local art, music, and cultural performances.',
-    date: 'July 8-10, 2025',
-    time: '11:00 AM - 10:00 PM',
-    location: 'City Park',
-    category: 'Festival',
+    date: 'Feb 1, 2025',
+    time: '10:30 AM - 1:00 PM',
+    location: 'Microsoft Office, Building 3, Gachibowli',
+    category: 'Conference',
+    status: 'Closed',
     image: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    link: 'https://reskilll.com/event/opensourcehyd'
   },
-  {
-    id: 3,
-    title: 'Wellness Retreat',
-    description: 'A weekend of mindfulness, yoga, and wellness workshops to rejuvenate your mind and body.',
-    date: 'August 20-22, 2025',
-    time: 'All Day',
-    location: 'Serenity Resort',
-    category: 'Wellness',
-    image: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-  },
+  // {
+  //   id: 3,
+  //   title: 'Wellness Retreat',
+  //   description: 'A weekend of mindfulness, yoga, and wellness workshops to rejuvenate your mind and body.',
+  //   date: 'August 20-22, 2025',
+  //   time: 'All Day',
+  //   location: 'Serenity Resort',
+  //   category: 'Wellness',
+  //   status: 'Open',
+  //   image: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+  // },
 ];
 
 export default function FeaturedEvents() {
@@ -55,7 +60,12 @@ export default function FeaturedEvents() {
                   alt={event.title}
                   className="object-cover w-full h-full transition-transform hover:scale-105"
                 />
-                <Badge className="absolute top-4 right-4">{event.category}</Badge>
+                <div className="absolute top-4 right-4 flex gap-2">
+                  <Badge>{event.category}</Badge>
+                  <Badge className={event.status === 'Open' ? 'bg-green-500 hover:bg-green-600' : 'bg-red-500 hover:bg-red-600'}>
+                    {event.status}
+                  </Badge>
+                </div>
               </div>
               <CardHeader>
                 <CardTitle>{event.title}</CardTitle>
@@ -78,7 +88,16 @@ export default function FeaturedEvents() {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button className="w-full">View Details</Button>
+                {event.id === 1 ? (
+                  <Button 
+                    className="w-full"
+                    onClick={() => window.open(event.link, '_blank', 'noopener,noreferrer')}
+                  >
+                    View Details
+                  </Button>
+                ) : (
+                  <Button className="w-full">View Details</Button>
+                )}
               </CardFooter>
             </Card>
           ))}

@@ -3,29 +3,29 @@ import { cn } from '@/lib/utils';
 
 const images = [
   {
-    url: '/src/components/images/ph-1.JPG',
+    url: '/nextgen-nexus/src/components/images/ph-1.jpg',
     alt: 'Community event with people networking',
   },
   {
-    url: 'https://images.unsplash.com/photo-1475721027785-f74ec9c7180a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    url: '/nextgen-nexus/src/components/images/ph-2.jpg',
     alt: 'Workshop session with participants',
   },
   {
-    url: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    url: '/nextgen-nexus/src/components/images/ph-3.jpg',
     alt: 'Group of friends at a community gathering',
   },
   {
-    url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1412&q=80',
+    url: '/nextgen-nexus/src/components/images/ph-4.jpg',
     alt: 'Concert event with crowd',
   },
   {
-    url: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80',
+    url: '/nextgen-nexus/src/components/images/ph-5.jpg',
     alt: 'Tech conference presentation',
   },
-  {
-    url: 'https://images.unsplash.com/photo-1472653431158-6364773b2a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80',
-    alt: 'Outdoor community festival',
-  },
+  // {
+  //   url: '/nextgen-nexus/src/components/images/ph-6.jpg',
+  //   alt: 'Outdoor community festival',
+  // },
 ];
 
 export default function ImageGallery() {
