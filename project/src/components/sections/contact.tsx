@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Instagram, Linkedin, Mail, MapPin, Phone, Twitter, Youtube } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Phone, Twitter, Youtube } from 'lucide-react';
 
 export default function ContactSection() {
   return (

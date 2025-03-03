@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button';
-import { Calendar } from 'lucide-react';
 
 export default function Hero() {
   return (
