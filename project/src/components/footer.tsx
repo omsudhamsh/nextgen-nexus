@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">NextGen Nexus</h3>
             <p className="text-muted-foreground">
-              Empowering the next generation through technology, innovation, and community collaboration.
+            Fueling growth with opportunities to master modern skills
             </p>
           </div>
           <div>

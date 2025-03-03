@@ -3,27 +3,27 @@ import { cn } from '@/lib/utils';
 
 const images = [
   {
-    url: '/nextgen-nexus/src/components/images/ph-1.jpg',
+    url: './images/ph-1.JPG',
     alt: 'Community event with people networking',
   },
   {
-    url: '/nextgen-nexus/src/components/images/ph-2.jpg',
+    url: './images/ph-2.JPG',
     alt: 'Workshop session with participants',
   },
   {
-    url: '/nextgen-nexus/src/components/images/ph-3.jpg',
+    url: './images/ph-3.JPG',
     alt: 'Group of friends at a community gathering',
   },
   {
-    url: '/nextgen-nexus/src/components/images/ph-4.jpg',
+    url: './images/ph-4.JPG',
     alt: 'Concert event with crowd',
   },
   {
-    url: '/nextgen-nexus/src/components/images/ph-5.jpg',
+    url: './images/ph-5.JPG',
     alt: 'Tech conference presentation',
   },
   // {
-  //   url: '/nextgen-nexus/src/components/images/ph-6.jpg',
+  //   url: './images/ph-6.JPG',
   //   alt: 'Outdoor community festival',
   // },
 ];
