@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Linkedin, Twitter, UserPlus } from 'lucide-react';
+import { Linkedin, UserPlus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const teamMembers = [
@@ -9,8 +9,7 @@ const teamMembers = [
     role: 'Founder & CEO',
     bio: 'Tech enthusiast and community builder passionate about empowering the next generation through technology and innovation.',
     image: '/nextgen-nexus/images/harshaanna-nn.png',
-    linkedin: 'https://www.linkedin.com/in/harsha-vardhan-reddy-pullagura-257175224/',
-    twitter: 'https://x.com/harsha_vardhan',
+    linkedin: 'https://www.linkedin.com/in/harsha-vardhan-lankalapalli/',
   },
   {
     id: 2,
@@ -18,8 +17,7 @@ const teamMembers = [
     role: 'Co-Founder',
     bio: 'Technology advocate focused on creating impactful learning experiences and fostering collaboration within the tech community.',
     image: '/nextgen-nexus/images/dhanushanna-nn.png',
-    linkedin: 'https://www.linkedin.com/in/dhanush-goud-malothu-8b8a95224/',
-    twitter: 'https://x.com/dhanush_goud',
+    linkedin: 'https://www.linkedin.com/in/dhanush-goud/',
   },
   {
     id: 3,
@@ -27,17 +25,23 @@ const teamMembers = [
     role: 'Operational Lead',
     bio: 'Strategic planner and community organizer dedicated to creating engaging tech events and fostering knowledge sharing.',
     image: '/nextgen-nexus/images/gayatrig-nn.png',
-    linkedin: 'https://www.linkedin.com/in/gayatri-g-906239224/',
-    twitter: 'https://x.com/gayatri_g',
+    linkedin: 'https://www.linkedin.com/in/g-gayatri192005/',
   },
   {
     id: 4,
-    name: 'Shruthi K',
+    name: 'Shruthi Kolluri',
     role: 'Co-Operational Lead',
     bio: 'Community engagement specialist focused on building bridges between technology enthusiasts and creating learning opportunities.',
     image: '/nextgen-nexus/images/shruthi-nn.png',
-    linkedin: 'https://www.linkedin.com/in/shruthi-k-0b3275224/',
-    twitter: 'https://x.com/shruthi_k',
+    linkedin: 'https://www.linkedin.com/in/sruthi-kolluri/',
+  },
+  {
+    id: 5,
+    name: 'Manasa Pandla',
+    role: 'Esports Manager',
+    bio: 'Community engagement specialist focused on building bridges between technology enthusiasts and creating learning opportunities.',
+    image: '/nextgen-nexus/images/manasa-nn.png',
+    linkedin: 'https://www.linkedin.com/in/pandala-manasa/',
   },
 ];
 
@@ -75,15 +79,6 @@ export default function TeamSection() {
                       rel="noopener noreferrer"
                     >
                       <Linkedin className="h-5 w-5 text-primary" />
-                    </a>
-                    <a
-                      href={member.twitter}
-                      className="bg-primary/10 p-2 rounded-full hover:bg-primary/20 transition-colors"
-                      aria-label={`${member.name}'s Twitter`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Twitter className="h-5 w-5 text-primary" />
                     </a>
                   </div>
                 </div>
